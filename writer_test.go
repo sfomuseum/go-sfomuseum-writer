@@ -37,7 +37,7 @@ func TestWriteFeature(t *testing.T) {
 		t.Fatal(err)
 	}
 
-	err = WriteFeature(ctx, wr, f)
+	_, err = WriteFeature(ctx, wr, f)
 
 	if err != nil {
 		t.Fatal(err)
@@ -77,7 +77,7 @@ func TestWriteFeatureBytes(t *testing.T) {
 		t.Fatal(err)
 	}
 
-	err = WriteFeatureBytes(ctx, wr, body)
+	_, err = WriteFeatureBytes(ctx, wr, body)
 
 	if err != nil {
 		t.Fatal(err)
