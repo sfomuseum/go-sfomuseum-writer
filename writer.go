@@ -4,7 +4,8 @@ import (
 	"bytes"
 	"context"
 	"errors"
-	"github.com/sfomuseum/go-sfomuseum-export"
+	"github.com/whosonfirst/go-whosonfirst-export/v2"	
+	_ "github.com/sfomuseum/go-sfomuseum-export/v2"
 	"github.com/tidwall/gjson"
 	"github.com/whosonfirst/go-whosonfirst-geojson-v2"
 	"github.com/whosonfirst/go-whosonfirst-uri"
@@ -18,19 +19,13 @@ func WriteFeature(ctx context.Context, wr go_writer.Writer, f geojson.Feature) (
 
 func WriteFeatureBytes(ctx context.Context, wr go_writer.Writer, body []byte) (int64, error) {
 
-	ex_opts, err := export.NewDefaultOptions()
+	ex, err := export.NewExporter(ctx, "sfomuseum://")
 
 	if err != nil {
 		return -1, err
 	}
 
-	exporter, err := export.NewSFOMuseumExporter(ex_opts)
-
-	if err != nil {
-		return -1, err
-	}
-
-	ex_body, err := exporter.Export(body)
+	ex_body, err := ex.Export(ctx, body)
 
 	if err != nil {
 		return -1, err
