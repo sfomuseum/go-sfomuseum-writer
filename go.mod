@@ -3,10 +3,10 @@ module github.com/sfomuseum/go-sfomuseum-writer
 go 1.16
 
 require (
-	github.com/sfomuseum/go-sfomuseum-export/v2 v2.0.0
-	github.com/tidwall/gjson v1.6.8
-	github.com/whosonfirst/go-whosonfirst-export/v2 v2.1.0
-	github.com/whosonfirst/go-whosonfirst-geojson-v2 v0.15.1
+	github.com/sfomuseum/go-sfomuseum-export/v2 v2.1.1
+	github.com/tidwall/gjson v1.7.5
+	github.com/whosonfirst/go-whosonfirst-export/v2 v2.3.0
+	github.com/whosonfirst/go-whosonfirst-geojson-v2 v0.16.3
 	github.com/whosonfirst/go-whosonfirst-uri v0.2.0
-	github.com/whosonfirst/go-writer v0.4.0
+	github.com/whosonfirst/go-writer v0.4.1
 )
