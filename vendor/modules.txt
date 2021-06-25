@@ -41,7 +41,7 @@ github.com/sfomuseum/go-edtf/level2
 github.com/sfomuseum/go-edtf/parser
 github.com/sfomuseum/go-edtf/re
 github.com/sfomuseum/go-edtf/tests
-# github.com/sfomuseum/go-sfomuseum-export/v2 v2.2.0
+# github.com/sfomuseum/go-sfomuseum-export/v2 v2.2.1
 ## explicit
 github.com/sfomuseum/go-sfomuseum-export/v2
 github.com/sfomuseum/go-sfomuseum-export/v2/properties
