@@ -132,6 +132,8 @@ github.com/sfomuseum/go-sfomuseum-export/v2 v2.2.1 h1:LfF5NrNYJs4pcjs4Q9LGMFnF41
 github.com/sfomuseum/go-sfomuseum-export/v2 v2.2.1/go.mod h1:2jpe+4jCP3cfdcD6pTBmWEzuf5ZR816q2d2xWOQe1w4=
 github.com/sfomuseum/go-sfomuseum-export/v2 v2.3.4 h1:MYq77kpAZgKi3xxS+f9YRRUmZQL+dteOnMnp01Wj028=
 github.com/sfomuseum/go-sfomuseum-export/v2 v2.3.4/go.mod h1:H+sfGmhMFS9kemMSHbtU4nlNZbqx26+yrtbosySX6v8=
+github.com/sfomuseum/go-sfomuseum-export/v2 v2.3.5 h1:+1gBm40z4vYVu9f64Sj85kJcCCa7U73X+75RebGD9Kk=
+github.com/sfomuseum/go-sfomuseum-export/v2 v2.3.5/go.mod h1:QRC8o0NIJWo4thmMBl7karbsmH0wJREIEQwGe9dbG1A=
 github.com/skelterjohn/geom v0.0.0-20180103142417-96f3e8a219c5 h1:qQF/q/+xaKD4CAVz3zfuvpij8U4ihSGIhHfOROI4NFc=
 github.com/skelterjohn/geom v0.0.0-20180103142417-96f3e8a219c5/go.mod h1:w8cQIijHlvvZM7afYlixPThHAdD+AkRFw3Mb9yQ2Y+I=
 github.com/smartystreets/assertions v0.0.0-20180927180507-b2de0cb4f26d/go.mod h1:OnSkiWE9lh6wB0YB77sQom3nweQdgAjqCqsofrRNTgc=
@@ -189,6 +191,8 @@ github.com/tidwall/sjson v1.1.7 h1:sgVPwu/yygHJ2m1pJDLgGM/h+1F5odx5Q9ljG3imRm8=
 github.com/tidwall/sjson v1.1.7/go.mod h1:w/yG+ezBeTdUxiKs5NcPicO9diP38nk96QBAbIIGeFs=
 github.com/tidwall/sjson v1.2.2 h1:H1Llj/C9G+BoUN2DsybLHjWvr9dx4Uazavf0sXQ+rOs=
 github.com/tidwall/sjson v1.2.2/go.mod h1:jmW2RZpbKuExPFUHeFSBMiovT9ZyOziEHDRkbsdp0B0=
+github.com/tidwall/sjson v1.2.4 h1:cuiLzLnaMeBhRmEv00Lpk3tkYrcxpmbU81tAY4Dw0tc=
+github.com/tidwall/sjson v1.2.4/go.mod h1:098SZ494YoMWPmMO6ct4dcFnqxwj9r/gF0Etp19pSNM=
 github.com/tomtaylor/go-whosonfirst-format v0.2.0 h1:UD/kP2dFApJFkgo/gGC08/7t018bP7PHQreDVoTYLTs=
 github.com/tomtaylor/go-whosonfirst-format v0.2.0/go.mod h1:fjMnbCrPWx3EHMHWoyqH12A/nxAvWbdIPHjXBMteDm4=
 github.com/whosonfirst/algnhsa v0.1.0/go.mod h1:swLBXxaVTv3s6dJLhekdQCuCTshUew+xHjptRC21RG0=
