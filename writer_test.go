@@ -1,10 +1,14 @@
 package writer
 
 import (
+	"bufio"
+	"bytes"
 	"context"
-	"github.com/whosonfirst/go-whosonfirst-geojson-v2/feature"
+	"fmt"
+	"github.com/paulmach/orb/geojson"
+	"github.com/whosonfirst/go-whosonfirst-feature/properties"
 	go_writer "github.com/whosonfirst/go-writer"
-	"io/ioutil"
+	"io"
 	"os"
 	"path/filepath"
 	"testing"
@@ -14,44 +18,81 @@ func TestWriteFeature(t *testing.T) {
 
 	ctx := context.Background()
 
-	cwd, err := os.Getwd()
+	body, err := read_feature(ctx)
 
 	if err != nil {
-		t.Fatal(err)
+		t.Fatalf("Failed to read feature, %v", err)
 	}
 
-	fixtures := filepath.Join(cwd, "fixtures")
-	feature_path := filepath.Join(fixtures, "1159160649.geojson")
-
-	fh, err := os.Open(feature_path)
-
-	f, err := feature.LoadWOFFeatureFromReader(fh)
+	f, err := geojson.UnmarshalFeature(body)
 
 	if err != nil {
-		t.Fatal(err)
+		t.Fatalf("Failed to unmarshal feature, %v", err)
+	}
+
+	var buf bytes.Buffer
+	buf_wr := bufio.NewWriter(&buf)
+
+	wr, err := go_writer.NewWriter(ctx, "io://")
+
+	if err != nil {
+		t.Fatalf("Failed to create new writer, %v", err)
+	}
+
+	ctx, err = go_writer.SetIOWriterWithContext(ctx, buf_wr)
+
+	if err != nil {
+		t.Fatalf("Failed to set IO writer context, %v", err)
+	}
+
+	err = WriteFeature(ctx, wr, f)
+
+	if err != nil {
+		t.Fatalf("Failed to write feature, %v", err)
+	}
+
+	buf_wr.Flush()
+
+	id, err := properties.Id(buf.Bytes())
+
+	if err != nil {
+		t.Fatalf("Failed to derive ID, %v", err)
+	}
+
+	if id != 1159160649 {
+		t.Fatalf("Unexpected ID returned: %d", id)
+	}
+}
+
+func TestWriteBytes(t *testing.T) {
+
+	ctx := context.Background()
+
+	body, err := read_feature(ctx)
+
+	if err != nil {
+		t.Fatalf("Failed to read feature, %v", err)
 	}
 
 	wr, err := go_writer.NewWriter(ctx, "null://")
 
 	if err != nil {
-		t.Fatal(err)
+		t.Fatalf("Failed to create new writer, %v", err)
 	}
 
-	_, err = WriteFeature(ctx, wr, f)
+	err = WriteBytes(ctx, wr, body)
 
 	if err != nil {
-		t.Fatal(err)
+		t.Fatalf("Failed to write feature, %v", err)
 	}
 }
 
-func TestWriteFeatureBytes(t *testing.T) {
-
-	ctx := context.Background()
+func read_feature(ctx context.Context) ([]byte, error) {
 
 	cwd, err := os.Getwd()
 
 	if err != nil {
-		t.Fatal(err)
+		return nil, fmt.Errorf("Failed to determine current working directory, %v", err)
 	}
 
 	fixtures := filepath.Join(cwd, "fixtures")
@@ -60,26 +101,16 @@ func TestWriteFeatureBytes(t *testing.T) {
 	fh, err := os.Open(feature_path)
 
 	if err != nil {
-		t.Fatal(err)
+		return nil, fmt.Errorf("Failed to open %s, %v", feature_path, err)
 	}
 
 	defer fh.Close()
 
-	body, err := ioutil.ReadAll(fh)
+	body, err := io.ReadAll(fh)
 
 	if err != nil {
-		t.Fatal(err)
+		return nil, fmt.Errorf("Failed to read %s, %v", feature_path, err)
 	}
 
-	wr, err := go_writer.NewWriter(ctx, "null://")
-
-	if err != nil {
-		t.Fatal(err)
-	}
-
-	_, err = WriteFeatureBytes(ctx, wr, body)
-
-	if err != nil {
-		t.Fatal(err)
-	}
+	return body, nil
 }
