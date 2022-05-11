@@ -115,8 +115,8 @@ github.com/whosonfirst/go-whosonfirst-sources v0.1.0/go.mod h1:EUMHyGzUmqPPxlMmO
 github.com/whosonfirst/go-whosonfirst-uri v1.0.1/go.mod h1:8eaDVcc4v+HHHEDaRbApdmhPwM4/JQllw2PktvZcPVs=
 github.com/whosonfirst/go-whosonfirst-uri v1.1.0 h1:kNYOmKSm3u2asUOeq7yXL1Q8gFKkPIl8A0qinKrGV/8=
 github.com/whosonfirst/go-whosonfirst-uri v1.1.0/go.mod h1:8eaDVcc4v+HHHEDaRbApdmhPwM4/JQllw2PktvZcPVs=
-github.com/whosonfirst/go-whosonfirst-writer v1.0.0 h1:I/2nh+KockIUpBp3xLAJQmN/tFho1UPEvjseouqZXN0=
-github.com/whosonfirst/go-whosonfirst-writer v1.0.0/go.mod h1:3HAILvwAnoMob1qFUQsoHuJTRJ/gZjtI5PrPGyOvjaQ=
+github.com/whosonfirst/go-whosonfirst-writer/v2 v2.0.0 h1:ieFQmu/1DtHnG68XbxZE08qNs+PY3uZkTJkbI8j1hiY=
+github.com/whosonfirst/go-whosonfirst-writer/v2 v2.0.0/go.mod h1:8BVCgjK+MfBNwAcHxdbb9uu/gUQsMZqzv0uyjHSxu6o=
 github.com/whosonfirst/go-writer v0.8.0 h1:Tgibn65KrLqfC5YSIxZfXNsNFdk8bvP3/LpqbERU0FY=
 github.com/whosonfirst/go-writer v0.8.0/go.mod h1:Qj0rZgdoFagSJ1xwhm60KyTgMU4DK5C6q5n8zKpgnj8=
 github.com/whosonfirst/warning v0.1.1/go.mod h1:/unEMzhB9YaMeEwTJpzLN3kM5LiSxdJhKEsf/OQhn6s=

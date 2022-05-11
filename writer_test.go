@@ -45,7 +45,7 @@ func TestWriteFeature(t *testing.T) {
 		t.Fatalf("Failed to set IO writer context, %v", err)
 	}
 
-	err = WriteFeature(ctx, wr, f)
+	_, err = WriteFeature(ctx, wr, f)
 
 	if err != nil {
 		t.Fatalf("Failed to write feature, %v", err)
@@ -80,11 +80,16 @@ func TestWriteBytes(t *testing.T) {
 		t.Fatalf("Failed to create new writer, %v", err)
 	}
 
-	err = WriteBytes(ctx, wr, body)
+	id, err := WriteBytes(ctx, wr, body)
 
 	if err != nil {
 		t.Fatalf("Failed to write feature, %v", err)
 	}
+
+	if id != 1159160649 {
+		t.Fatalf("Unexpected ID returned: %d", id)
+	}
+	
 }
 
 func read_feature(ctx context.Context) ([]byte, error) {
