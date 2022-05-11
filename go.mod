@@ -1,4 +1,4 @@
-module github.com/sfomuseum/go-sfomuseum-writer
+module github.com/sfomuseum/go-sfomuseum-writer/v2
 
 go 1.16
 
