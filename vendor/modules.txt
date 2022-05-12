@@ -6,7 +6,7 @@ github.com/aaronland/go-artisanal-integers-proxy/service
 github.com/aaronland/go-brooklynintegers-api
 # github.com/aaronland/go-pool v1.0.0
 github.com/aaronland/go-pool
-# github.com/aaronland/go-roster v0.0.2
+# github.com/aaronland/go-roster v1.0.0
 github.com/aaronland/go-roster
 # github.com/aaronland/go-string v0.1.2
 github.com/aaronland/go-string/random
@@ -38,7 +38,7 @@ github.com/sfomuseum/go-edtf/level2
 github.com/sfomuseum/go-edtf/parser
 github.com/sfomuseum/go-edtf/re
 github.com/sfomuseum/go-edtf/tests
-# github.com/sfomuseum/go-sfomuseum-export/v2 v2.3.6
+# github.com/sfomuseum/go-sfomuseum-export/v2 v2.3.7
 ## explicit
 github.com/sfomuseum/go-sfomuseum-export/v2
 github.com/sfomuseum/go-sfomuseum-export/v2/properties
@@ -50,7 +50,7 @@ github.com/tidwall/match
 github.com/tidwall/pretty
 # github.com/tidwall/sjson v1.2.4
 github.com/tidwall/sjson
-# github.com/whosonfirst/go-whosonfirst-export/v2 v2.4.4
+# github.com/whosonfirst/go-whosonfirst-export/v2 v2.4.5
 ## explicit
 github.com/whosonfirst/go-whosonfirst-export/v2
 github.com/whosonfirst/go-whosonfirst-export/v2/properties
@@ -69,12 +69,12 @@ github.com/whosonfirst/go-whosonfirst-log
 # github.com/whosonfirst/go-whosonfirst-sources v0.1.0
 github.com/whosonfirst/go-whosonfirst-sources
 github.com/whosonfirst/go-whosonfirst-sources/sources
-# github.com/whosonfirst/go-whosonfirst-uri v1.1.0
+# github.com/whosonfirst/go-whosonfirst-uri v1.2.0
 github.com/whosonfirst/go-whosonfirst-uri
-# github.com/whosonfirst/go-whosonfirst-writer/v2 v2.0.1
+# github.com/whosonfirst/go-whosonfirst-writer/v2 v2.0.2
 ## explicit
 github.com/whosonfirst/go-whosonfirst-writer/v2
-# github.com/whosonfirst/go-writer v1.0.0
+# github.com/whosonfirst/go-writer v1.0.1
 ## explicit
 github.com/whosonfirst/go-writer
 # go.uber.org/ratelimit v0.2.0
