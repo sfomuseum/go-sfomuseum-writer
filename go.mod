@@ -1,4 +1,4 @@
-module github.com/sfomuseum/go-sfomuseum-writer/v2
+module github.com/sfomuseum/go-sfomuseum-writer/v3
 
 go 1.18
 
@@ -7,8 +7,8 @@ require (
 	github.com/sfomuseum/go-sfomuseum-export/v2 v2.3.7
 	github.com/whosonfirst/go-whosonfirst-export/v2 v2.5.0
 	github.com/whosonfirst/go-whosonfirst-feature v0.0.24
-	github.com/whosonfirst/go-whosonfirst-writer/v2 v2.1.0
-	github.com/whosonfirst/go-writer/v2 v2.0.0
+	github.com/whosonfirst/go-whosonfirst-writer/v3 v3.0.0
+	github.com/whosonfirst/go-writer/v3 v3.0.0
 )
 
 require (

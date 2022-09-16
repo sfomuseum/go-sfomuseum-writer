@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"github.com/paulmach/orb/geojson"
 	"github.com/whosonfirst/go-whosonfirst-feature/properties"
-	go_writer "github.com/whosonfirst/go-writer/v2"
+	go_writer "github.com/whosonfirst/go-writer/v3"
 	"io"
 	"os"
 	"path/filepath"
