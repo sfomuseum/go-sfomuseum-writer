@@ -5,13 +5,14 @@ import (
 	"bytes"
 	"context"
 	"fmt"
-	"github.com/paulmach/orb/geojson"
-	"github.com/whosonfirst/go-whosonfirst-feature/properties"
-	go_writer "github.com/whosonfirst/go-writer/v3"
 	"io"
 	"os"
 	"path/filepath"
 	"testing"
+
+	"github.com/paulmach/orb/geojson"
+	"github.com/whosonfirst/go-whosonfirst-feature/properties"
+	go_writer "github.com/whosonfirst/go-writer/v3"
 )
 
 func TestWriteFeature(t *testing.T) {
@@ -89,7 +90,7 @@ func TestWriteBytes(t *testing.T) {
 	if id != 1159160649 {
 		t.Fatalf("Unexpected ID returned: %d", id)
 	}
-	
+
 }
 
 func read_feature(ctx context.Context) ([]byte, error) {
