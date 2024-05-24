@@ -1,14 +1,16 @@
 module github.com/sfomuseum/go-sfomuseum-writer/v3
 
-go 1.21
+go 1.22.1
+
+toolchain go1.22.3
 
 require (
-	github.com/paulmach/orb v0.10.0
-	github.com/sfomuseum/go-sfomuseum-export/v2 v2.3.8
-	github.com/whosonfirst/go-whosonfirst-export/v2 v2.7.1
-	github.com/whosonfirst/go-whosonfirst-feature v0.0.26
-	github.com/whosonfirst/go-whosonfirst-writer/v3 v3.1.0
-	github.com/whosonfirst/go-writer/v3 v3.1.0
+	github.com/paulmach/orb v0.11.1
+	github.com/sfomuseum/go-sfomuseum-export/v2 v2.3.10
+	github.com/whosonfirst/go-whosonfirst-export/v2 v2.8.0
+	github.com/whosonfirst/go-whosonfirst-feature v0.0.27
+	github.com/whosonfirst/go-whosonfirst-writer/v3 v3.1.2
+	github.com/whosonfirst/go-writer/v3 v3.1.1
 )
 
 require (
@@ -27,11 +29,11 @@ require (
 	github.com/g8rswimmer/error-chain v1.0.0 // indirect
 	github.com/natefinch/atomic v1.0.1 // indirect
 	github.com/sfomuseum/go-edtf v1.1.1 // indirect
-	github.com/tidwall/gjson v1.16.0 // indirect
+	github.com/tidwall/gjson v1.17.1 // indirect
 	github.com/tidwall/match v1.1.1 // indirect
 	github.com/tidwall/pretty v1.2.0 // indirect
 	github.com/tidwall/sjson v1.2.5 // indirect
-	github.com/whosonfirst/go-whosonfirst-flags v0.4.4 // indirect
+	github.com/whosonfirst/go-whosonfirst-flags v0.5.1 // indirect
 	github.com/whosonfirst/go-whosonfirst-format v0.4.1 // indirect
 	github.com/whosonfirst/go-whosonfirst-id v1.2.2 // indirect
 	github.com/whosonfirst/go-whosonfirst-sources v0.1.0 // indirect
