@@ -2,14 +2,12 @@ module github.com/sfomuseum/go-sfomuseum-writer/v3
 
 go 1.22.1
 
-toolchain go1.22.3
-
 require (
 	github.com/paulmach/orb v0.11.1
-	github.com/sfomuseum/go-sfomuseum-export/v2 v2.3.10
-	github.com/whosonfirst/go-whosonfirst-export/v2 v2.8.0
+	github.com/sfomuseum/go-sfomuseum-export/v2 v2.3.11
+	github.com/whosonfirst/go-whosonfirst-export/v2 v2.8.1
 	github.com/whosonfirst/go-whosonfirst-feature v0.0.27
-	github.com/whosonfirst/go-whosonfirst-writer/v3 v3.1.2
+	github.com/whosonfirst/go-whosonfirst-writer/v3 v3.1.3
 	github.com/whosonfirst/go-writer/v3 v3.1.1
 )
 
